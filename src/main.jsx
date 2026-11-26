@@ -21,7 +21,7 @@ const dogeOSChikyuTestnet = {
 }
 
 const dogeConfig = {
-  clientId: import.meta.env.VITE_DOGEOS_CLIENT_ID,
+  clientId: import.meta.env.VITE_DOGEOS_CLIENT_ID || '',
   defaultConnectChain: ChainTypeEnum.EVM,
   chains: {
     evm: [dogeOSChikyuTestnet],
